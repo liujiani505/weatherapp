@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content:space-between;
+    height: 120vh;
+    margin: 0;
+    font-family: 'Noto Sans JP';
+    background: #222;
+    background-image: url('https://source.unsplash.com/1600x900/?weather');
+    background-repeat: no-repeat;
+    background-size: cover; 
+    font-size: 120%;
+}
+
+p{
+    font-size: 14px;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.title {
+    margin: 10px;
+    color: white;
+}
+
+.left-panel {
+    color: white;
+    padding: 2em;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px #888888;
+}
+
+.right-panel{
+    height: 120vh;
+    background:rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    color: #555555;
+    width: 100%;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.weather{
+    margin-left:50px;
+    margin-top: 60px;
+
+}
+
+.weather.loading:after {
+    visibility: visible;
+    content: "Search for a city to get daily and upcoming forecasts.";
+    font-size: 2em;
+    color: white;
+    text-shadow: 3px 3px 10px #999999;
+}
+
+
+h1{
+    font-size: 90px;
+    color: white;
+    text-shadow: 3px 3px 10px #999999;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+    text-shadow: 3px 3px 10px #999999;
+}
+
+h3{
+    font-size: 30px;
+    color: #555555;
+}
+
+h6{
+    color: #555555;
+    font-size: .8em;
+    font-weight: 300;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+input[type ="submit"], input[type = "text"]{
+    border: none;
+    border-bottom: 1px solid #555555;
+    outline: none;
+    padding: .8em 2em;
+    color: #333333;
+    font-family: inherit;
+    font-size: .9em;
+    width: calc(80% - 150px);
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+    background: transparent;
+}
+
+.description {
+    text-transform: capitalize;
+}
+
+button {
+    border: none;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.9);
+    color: #666666;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+
+button:hover {
+    background: #8383836b;
+}
+
+.fiveday-forecast{
+    margin: 50px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.fiveday-forecast img{
+    width:30%;
+}
+
+.card{
+    height: 100px;
+    width: 200px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body {
+        display: block;
+    }
+
+    .left-panel{
+        height: 30vh;
+    }
+
+    .weather{
+        margin-left: 50px;
+        margin-top: 35px;
+    }
+}
