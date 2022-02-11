@@ -1,5 +1,3 @@
-
-
 let weatherData;
 let forecastData;
 const API_KEY="25f0bf1c5b6fc57bf8d61c0630ea40b5";
