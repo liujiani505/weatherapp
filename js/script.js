@@ -1,7 +1,8 @@
-import API_KEY from "./apikey.js"
+
 
 let weatherData;
 let forecastData;
+const API_KEY="25f0bf1c5b6fc57bf8d61c0630ea40b5";
 const WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?";
 const FORECAST_URL = "http://api.openweathermap.org/data/2.5/onecall?";
 const $name = $("#city-name")
