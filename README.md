@@ -1,1 +1,1 @@
-## AJAX Weather App
+## Weather App
