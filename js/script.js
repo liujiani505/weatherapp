@@ -1,8 +1,8 @@
 let weatherData;
 let forecastData;
 const API_KEY="25f0bf1c5b6fc57bf8d61c0630ea40b5";
-const WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?";
-const FORECAST_URL = "http://api.openweathermap.org/data/2.5/onecall?";
+const WEATHER_URL = "https://api.openweathermap.org/data/2.5/weather?";
+const FORECAST_URL = "https://api.openweathermap.org/data/2.5/onecall?";
 const $name = $("#city-name")
 const $temp = $("#temp")
 const $desc = $("#desc")
@@ -10,7 +10,7 @@ const $humidity = $("#humidity")
 const $wind = $("#wind")
 const $icon = $(".icon")
 const $weather = $(".weather")
-const $input = $("input[type='text']");
+const $input = $("input[type='text']")
 
 
 //convert temperature data in Kelvin to Fahrenheit
