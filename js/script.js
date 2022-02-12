@@ -13,6 +13,7 @@ const $weather = $(".weather")
 const $input = $("input[type='text']")
 
 
+
 //convert temperature data in Kelvin to Fahrenheit
 function convertTemp(temp){
     let fahrenheit = Math.floor((temp - 273.15) * 9/5 + 32);
